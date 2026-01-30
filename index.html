@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Fitri</title>
+    <title>Portfolio Fitri Ramadhani</title>
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
@@ -33,57 +33,110 @@
         <!-- Home Page -->
         <section id="home-page" class="min-h-[500px] text-center content-center">
             <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
-            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+            <p class="mt-2">Kami dengan senang hati menyambut kehadiran Anda. Silakan jelajahi layanan serta berbagai penawaran yang kami sediakan.</p>
         </section>
 
         <hr />
 
         <!-- Our Profile Page -->
-        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
-            <h2 class="text-xl font-bold">About Fitri Company</h2>
-            <p class="mt-2">Fitri Company is dedicated to providing top-notch services in various domains.</p>
-        </section>
+<section id="our-profile-page" class="min-h-screen py-16 px-6 md:px-12 lg:px-24">
+    <!-- Photo Banner / Hero -->
+    <div class="relative w-full h-96 md:h-[500px] rounded-3xl overflow-hidden mb-16 shadow-2xl">
+        <img 
+            src="https://i.pinimg.com/736x/3e/7f/5c/3e7f5c55cbcd82127c507c0a39a2e818.jpg"
+    alt="Tim Fitri Company Bekerja" 
+    class="w-full h-full object-cover"
+        >
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex items-end justify-center pb-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg">
+                Fitri Company
+            </h1>
+        </div>
+    </div>
+
+    <!-- About the Company -->
+<div class="max-w-5xl mx-auto mb-20">
+    <div class="glass-card p-10 md:p-12">
+        <h2 class="text-4xl font-bold mb-8 text-center gradient-text">About the Company</h2>
+        <p class="text-lg leading-relaxed mb-6">
+            Fitri Company adalah perusahaan teknologi kreatif yang berdiri sejak 2024 di Jakarta. Kami spesialis dalam pembuatan website modern, aplikasi mobile, dan solusi digital untuk UMKM hingga startup. Dengan tim muda dan passionate, kami membantu bisnis berkembang di era digital dengan desain cantik, performa cepat, dan user-friendly.
+        </p>
+        <p class="text-lg leading-relaxed">
+            Visi kami adalah menciptakan dampak positif melalui inovasi digital yang inklusif dan berkelanjutan.
+        </p>
+    </div>
+</div>
+
+<!-- Vision & Mission -->
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+    <!-- Vision -->
+    <div class="glass-card p-10 md:p-12 text-center">
+        <h3 class="text-3xl font-bold mb-6 gradient-text">Our Vision</h3>
+        <p class="text-xl italic leading-relaxed">
+            Menjadi penyedia solusi digital terdepan di Indonesia yang memberdayakan setiap bisnis untuk sukses di dunia maya.
+        </p>
+    </div>
+
+    <!-- Mission -->
+    <div class="glass-card p-10 md:p-12">
+        <h3 class="text-3xl font-bold mb-8 gradient-text text-center">Our Mission</h3>
+        <ul class="text-lg space-y-4 list-disc pl-8">
+            <li>Memberikan layanan berkualitas tinggi dengan harga terjangkau</li>
+            <li>Menggunakan teknologi terkini untuk hasil optimal</li>
+            <li>Selalu inovatif dan responsif terhadap kebutuhan klien</li>
+            <li>Membangun hubungan jangka panjang berbasis kepercayaan</li>
+        </ul>
+    </div>
+</div>
+</section>
 
         <hr />
 
         <!-- Portfolio Page -->
         <section id="portfolio-page" class="min-h-[500px] text-center content-center">
             <h2 class="text-xl font-bold">Our Portfolio</h2>
-            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+            <p class="mt-2">Tinjau berbagai proyek kami yang mencerminkan keterampilan serta keahlian profesional kami (Soon).</p>
         </section>
 
         <hr />
 
         <!-- Message Us Page -->
         <section id="message-us-page" class="min-h-[500px] mx-8">
-            <header>
-                <h2 class="text-xl font-bold">Message Us</h2>
-                <p class="mt-2">Have questions or want to work with us? Send us a message and we'll get back to you
-                    promptly.</p>
-            </header>
+    <header>
+        <h2 class="text-xl font-bold">Message Us</h2>
+        <p class="mt-2">Apakah Anda memiliki pertanyaan atau tertarik untuk bekerja sama dengan kami? Silakan hubungi kami melalui pesan.</p>
+    </header>
 
-            <form>
-                <div class="mb-4">
-                    <label class="block mb-2" for="name">Name:</label>
-                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
-                </div>
-                <div class="mb-4">
-                    <label class="block mb-2" for="email">Email:</label>
-                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
-                </div>
-                <div class="mb-4">
-                    <label class="block mb-2" for="message">Message:</label>
-                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
-                        required></textarea>
-                </div>
-                <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button">Send Message</button>
-            </form>
-        </section>
+    <form id="contact-form" class="mt-6 max-w-lg mx-auto">
+        <div class="mb-4">
+            <label class="block mb-2" for="name">Name:</label>
+            <input class="w-full p-2 border rounded" type="text" id="name" required />
+        </div>
+        <div class="mb-4">
+            <label class="block mb-2" for="email">Email:</label>
+            <input class="w-full p-2 border rounded" type="email" id="email" required />
+        </div>
+        <div class="mb-4">
+            <label class="block mb-2" for="message">Message:</label>
+            <textarea class="w-full p-2 border rounded" id="message" rows="5" required></textarea>
+        </div>
+        <button 
+            type="button" 
+            onclick="showMessage()"
+            class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+            Send Message
+        </button>
+    </form>
+
+    <!-- Area untuk menampilkan hasil (awalnya kosong) -->
+    <div id="result" class="mt-10"></div>
+</section>
     </main>
 
     <footer>
         <div class="text-center p-4">
-            &copy; 2026 Fitri Company. All rights reserved.
+            &copy; 2026 Fitri Company. Berkembang Bersama Anda.
         </div>
     </footer>
 
